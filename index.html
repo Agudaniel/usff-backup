@@ -37,10 +37,10 @@
     <link href="hide/assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font-Awesome -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="hide/assets/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Flat icon -->
-    <link href="assets/flaticon/flaticon.css" rel="stylesheet">
+    <link href="hide/assets/flaticon/flaticon.css" rel="stylesheet">
 
     <!-- Swiper -->
     <link href="assets/css/swiper.min.css" rel="stylesheet">
@@ -68,6 +68,7 @@
 
     <!-- Responsive -->
     <link href="assets/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="mynav.css">
     <link rel="stylesheet" href="style.css">
     
   </header>
@@ -76,8 +77,32 @@
   <div class="page-wrapper">
 
     <section>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="usfflogo.png" class="logo" alt="" name="logo"></a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">Highlights</a></li>
+                        <li><a href="#">Speakers</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+    </section>
+
+    <section>
       <div class="hero">
-        <nav class="sticky-nav"><a href=""><img src="usfflogo.png" class="logo" alt="" name="logo"></a>
+        <!-- <nav class="sticky-nav"><a href=""><img src="usfflogo.png" class="logo" alt="" name="logo"></a>
           <ul class="main-nav">
             
             <a href="#portfolio"><h1 >Highlights</h1></a>
@@ -86,10 +111,10 @@
             <a href="#contact"><h1 >About</h1></a>
             <a href="#contact"><h1 >contact</h1></a>
           </ul>
-        </nav>
-        <nav class="sticky-nav2"><a href=""><img src="https://i.ibb.co/djcK1Fv/logo.png" class="logo" alt="" name="logo"></a>
+        </nav> -->
+        <!-- <nav class="sticky-nav2"><a href=""><img src="https://i.ibb.co/djcK1Fv/logo.png" class="logo" alt="" name="logo"></a>
           
-        </nav>
+        </nav> -->
     
         <div class="hero-content">
           
@@ -128,7 +153,7 @@
             <div class="main-content">
                 <h1>UNIPORT SHORT <span>FILM FESTIVAL</span><br>2023</h1>
                 <h4>Recreating a world in a digital society</h4>
-                <a class="sub-button" href=""><p>Submmit Film</p></a>
+                <div class="button-div"><a class="sub-button" href="registeration.html"><p>Register</p></a><a class="sub-button" href=""><p>Submit Film</p></a></div>
                 </div>
         </div>
     
@@ -149,28 +174,97 @@
   
       <div class="s-boxes">
         
-        <div class="box" data-aos="zoom-in" data-aos-duration="600">
-          <div data-aos="zoom-in" data-aos-delay="400">
-            <img class="s-icons" src="https://i.ibb.co/gPM1GQw/mail.png" alt=""></div>
-          <h2><i class="fa fa-web" data-aos-delay="1000"></i>Acting Masterclass</h2>
-          <p>Get a clean coded responsive Website tested for compatibility across all browsers and optimized for a high loading speed.</p>
-        </div>
-        <div class="box" data-aos="zoom-in" data-aos-duration="600">
-            <div data-aos="zoom-in" data-aos-delay="400">
-              <img class="s-icons" src="https://i.ibb.co/gPM1GQw/mail.png" alt=""></div>
-            <h2><i class="fa fa-web" data-aos-delay="1000"></i>Acting Masterclass</h2>
-            <p>Get a clean coded responsive Website tested for compatibility across all browsers and optimized for a high loading speed.</p>
+        <div class="box" >
+            <div >
+              <img class="s-icons" src="" alt=""><svg class="s-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 383.31 331.88"><defs><style>.cls-1{fill:#ff9822;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M366.76.12a70.23,70.23,0,0,1-7.11,0Q187.29.16,14.9.16C4.9.16,0,5.1,0,15.12V57.5C0,62.72,1.74,65,5.71,64.89c3.82-.06,5.49-2.23,5.49-7.22,0-14,.08-28,0-42,0-3.3,1.08-4.3,4.33-4.3q176.11.11,352.24,0c3.53,0,4.43,1.24,4.43,4.59q-.11,134.49,0,269c0,3.8-1.37,4.64-4.8,4.63-21.71-.11-43.42,0-65.13-.07-1.19,0-2.38-.16-3.61-.25v-11.4h4.3q25.26,0,50.53,0c4.91,0,6.82-1.84,6.9-6.74.1-5.62,0-11.25,0-16.88,0-13.25,0-26.5,0-39.76,0-4.89-2.7-7.28-6.94-6.41-3.68.75-4.47,3.48-4.46,6.77q0,23.82,0,47.64v3.92H298.64V241.81c1,0,1.73,0,2.46,0,11.73.34,16.18-3.81,15.38-15.54-.4-5.82,1.22-9.78,5.6-13.66,7.69-6.82,7.92-14.63.51-21.31-4.72-4.26-7.2-8.64-6-15a10.48,10.48,0,0,0-.33-3.71c-1.39-7-5.55-10.63-12.62-11a45,45,0,0,0-6.36.09,7.86,7.86,0,0,1-7.22-3.07A39.72,39.72,0,0,0,287,155.3c-6.83-6.69-14.27-7.14-20.54,0-4.44,5-9.1,7.36-15.59,6.28a7.34,7.34,0,0,0-1.87,0c-7.49.73-12.61,5.54-12.18,13,.42,7.32-1.48,12.66-7.12,17.65-6.15,5.44-6.34,13.08-.3,18.48s7.84,11,7.45,18.66c-.37,7.24,4.95,11.86,12.36,12.3,1.7.1,3.42,0,5.26,0v24.63H34.54V34.72H349V180a27.41,27.41,0,0,0,.08,3.74,5.39,5.39,0,0,0,6,4.93c3.81-.15,5.36-2.35,5.37-7.78q0-74.83,0-149.68c0-6.66-1.69-8.27-8.56-8.27H31.41c-6.94,0-8.5,1.61-8.5,8.69q0,118.73,0,237.45c0,7.44,1.29,8.73,8.68,8.73H254.4v11.66H16.52c-5.31,0-5.32,0-5.32-5.48q0-97.34,0-194.68c0-4.6-1.81-6.73-5.59-6.74S0,84.71,0,89.3Q0,188.14,0,287a14.66,14.66,0,0,0,1,5.83C3.77,298.93,8.87,301,15.31,301q117.17-.08,234.32,0h5v20.66c0,10.49,3.14,12.76,12.37,7.7,6.64-3.65,12.24-4.12,18.83,0,9.26,5.78,13.14,1.24,12.57-7.92-.41-6.68-.08-13.4-.08-20.43h4.57c21,0,41.93-.22,62.89.12,8.05.12,14.06-2.17,17.49-9.76V9.94C380.21,2.57,374.73-.68,366.76.12ZM286.6,316.65c-5.05-1.31-14.78-1.32-20.18,0V249c6.69,6.26,13.33,6.57,20.18-.13Zm-7.69-76.44a19.27,19.27,0,0,1-2.48,2.41c-1.85-2.06-3.55-3.71-5-5.58-4.37-5.77-10.18-7.62-17.15-6.71-6.23.81-6.93.25-6.35-5.87A20.2,20.2,0,0,0,240.34,206c-4.9-4.1-4.89-4.5-.16-8.39,6-4.92,8.51-11.08,7.77-18.8-.58-6-.11-6.39,5.79-5.76,7.72.82,13.82-1.87,18.73-7.85,3.78-4.62,4.38-4.61,8.11,0,5.1,6.27,11.51,8.76,19.48,7.8,4.83-.58,5.65.29,5.05,5.07-1,8.15,1.7,14.63,8,19.8,4.23,3.44,4.26,4.37.11,7.69-6.66,5.34-9.32,12.1-8,20.49.47,3-.4,5.21-3.9,4.5C291.53,228.52,284.31,232.14,278.91,240.21Z"/><path class="cls-1" d="M311.23,115.63c3.08-.62,4.88-2.5,4.78-5.72s-1.87-5.07-5.07-5.41a35.82,35.82,0,0,0-3.74-.06H76c-1.24,0-2.5,0-3.73.06-3.1.28-4.67,2.13-4.87,5.14-.29,4.17,2,6.06,7.4,6.06H308.25A15.57,15.57,0,0,0,311.23,115.63Z"/><path class="cls-1" d="M73,81.46c1.24.11,2.49.07,3.74.07H262.66a37.13,37.13,0,0,0,4.48-.19c3.1-.38,4.53-2.33,4.61-5.36.11-4.13-2.18-5.9-7.65-5.9H75.19c-.62,0-1.25,0-1.87,0-3.83.21-5.94,2.26-5.93,5.76S69.21,81.15,73,81.46Z"/><path class="cls-1" d="M129.86,222.52c-5.85-.05-8-1.67-9.33-6.7-.71-2.62-1.75-4.67-4.81-4.86s-5.11,1.17-6.48,4a33,33,0,0,1-4.14,6.58c-1.66,2-3.58,1.69-4.63-.77A43.63,43.63,0,0,1,97.31,212c-2-10.52-3.63-21.1-5.29-31.68-.71-4.5-2.13-6.39-5.36-6.41-3.7,0-6,2.44-6.34,6.86-.26,3.61-.34,7.23-.62,10.84a175.49,175.49,0,0,1-9.44,44.11c-.58,1.69-.34,4.65.77,5.7a7.28,7.28,0,0,0,6,1.35c1.65-.48,3.35-2.62,4-4.41,2.3-6.28,4.16-12.72,6.27-19.4,2.43,5.56,4.34,11.45,10.38,14.1,6.66,2.94,11.76-.16,15.88-4,3.89,1.57,7.36,4.06,10.93,4.21,14.56.64,29.14.66,43.71.68,3.61,0,5.49-2.42,5.44-5.82-.05-3.77-2.16-5.61-6.79-5.62C154.54,222.5,142.2,222.63,129.86,222.52Z"/><path class="cls-1" d="M208.8,149.81c2.86-.64,4.59-2.42,4.58-5.52a5.14,5.14,0,0,0-4.56-5.51,22.86,22.86,0,0,0-4.46-.29q-64,0-128,0a25.62,25.62,0,0,0-4.47.26c-3.23.57-4.62,2.71-4.49,5.89.14,3.64,2.38,5.39,7.06,5.4q32.92,0,65.87,0h64.38A18.59,18.59,0,0,0,208.8,149.81Z"/><path class="cls-1" d="M276.6,179.6a22.06,22.06,0,1,0,22,22.33A22.16,22.16,0,0,0,276.6,179.6Zm0,32.79a11,11,0,0,1-10.72-10.82,10.78,10.78,0,0,1,11-10.46,10.51,10.51,0,0,1,10.24,10.72A10.76,10.76,0,0,1,276.58,212.39Z"/></g></g></svg></div>
+            <h2><i class="fa fa-web"></i>Masterclass & Certificate</h2>
+            <p class="highbox">Get a clean coded responsive Website tested for compatibility across all browsers and optimized for a high loading speed.</p>
           </div>
-        <div class="box" data-aos="zoom-in" data-aos-duration="1300">
-          <div data-aos="zoom-in" data-aos-delay="800">
-            <img class="s-icons" src="https://i.ibb.co/rc7S2C4/graphic-design.png" alt=""></div>
-          <h2>Awards & Certificates</h2>
-          <p>Get visual concepts like Email marketing & Social media graphics, banners and Logos that communicate creativity.</p>
+          
+        <div class="box">
+            <div>
+              <img class="s-icons" src="" alt=""><svg class="s-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 383.31 348.26"><defs><style>.cls-1{fill:#5ce1e6;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M383.31,234c-5.15,10.91-7.51,12.36-22.47,13.52v4.28c0,10.24-6.46,17.36-16.67,17.84-7.6.36-15.23.36-22.83,0-10.21-.49-16.58-7.6-16.62-17.87,0-1.35,0-2.69,0-4.47h-4.33q-54.09,0-108.18.07a14.91,14.91,0,0,0-6.36,1.49c-26.16,12.82-52.24,12.85-78.33-.15a8.68,8.68,0,0,0-3.42-1.32c-8.34-.11-16.68-.06-25.51-.06,0,1.69,0,3.14,0,4.6,0,10.17-6.56,17.28-16.79,17.73-7.47.33-15,.32-22.45,0-10.4-.43-16.84-7.53-16.88-18,0-1.34,0-2.67,0-4.15-2.74-.16-5.1-.13-7.41-.47-9.34-1.35-15-8-15-17.45Q0,179.79,0,130C0,113.63,11.64,101.36,27.94,101c15.21-.31,30.44-.1,45.66-.05,4.31,0,6.83,2.29,6.78,5.79s-2.58,5.68-6.94,5.7c-14.6.07-29.2.37-43.79-.08-11-.35-18.57,8-18.51,18.4.19,32.45.06,64.89.07,97.34,0,5.55,1.75,7.57,6.84,7.58q34.26.08,68.5,0c.48,0,1-.11,2.17-.26L85.57,232C43,186.16,61.91,112.9,121.29,93.75c43.55-14,91.2,10.24,105.43,53.75a15.83,15.83,0,0,1,.87,4,5,5,0,0,1-4,5.52,5.19,5.19,0,0,1-6.33-2.66,21.41,21.41,0,0,1-1.5-3.81c-11-32-41.22-51.53-76-49.08C108.52,103.65,80.89,129,75,160.83c-7.51,40.4,20.39,79.45,60.95,85.32a72.83,72.83,0,0,0,83.32-64c.27-2.35.16-4.74.31-7.1.27-4.2,2.72-6.83,6.08-6.63s5.55,3,5.41,7.21c-.76,21.8-8.41,40.78-23.39,56.73-.82.88-1.63,1.77-2.9,3.16,1.89.09,3.19.22,4.49.22H363.45c7.24,0,8.64-1.44,8.65-8.8V202.37H313.75a28.94,28.94,0,0,1-3.36-.07c-3.6-.43-5.69-2.59-5.66-5.77s2.17-5.32,5.75-5.66a29.79,29.79,0,0,1,3,0h58.31V179.9h-3.9q-27.13,0-54.27,0a20,20,0,0,1-4.45-.35,5.18,5.18,0,0,1-4.42-5.63c.09-3.07,1.9-4.79,4.78-5.38a19.18,19.18,0,0,1,3.72-.17h58.6V157.44h-4.1q-27.14,0-54.28,0a18.7,18.7,0,0,1-4.79-.5c-2.75-.76-4.51-2.92-3.77-5.58.54-1.93,2.43-3.69,4.12-5,.89-.7,2.63-.41,4-.42q27.14,0,54.27,0h4.51c0-6.69.64-13.09-.15-19.31-1.14-9-8-14.06-17.39-14.06q-65.88,0-131.76,0a33.26,33.26,0,0,1-3.74-.07c-3.55-.41-5.7-2.65-5.67-5.79s2.24-5.33,5.79-5.65c1-.09,2,0,3,0h131c15.53,0,25.31,7.29,29.78,22.11.1.32.43.57.65.86ZM33.71,247.48a45.46,45.46,0,0,0,0,5.37c.41,3.22,2.19,5.27,5.63,5.3q11.19.08,22.38,0c3.45,0,5.18-2.15,5.57-5.36a46.54,46.54,0,0,0,0-5.3Zm315.87.08H316a40.42,40.42,0,0,0,0,5.42c.43,3,2.1,5.11,5.37,5.14q11.39.12,22.76,0c3.27,0,5-2.09,5.4-5.11A40.84,40.84,0,0,0,349.58,247.56Z"/><path class="cls-1" d="M146.85,236c-33.88.11-61.92-27.82-62-61.79s27.83-61.93,61.79-62,61.91,27.8,62,61.77S180.82,235.89,146.85,236Zm0-112.26a50.36,50.36,0,1,0,50.26,50.46A50.1,50.1,0,0,0,146.83,123.74Z"/><path class="cls-1" d="M152.51,39.5V69.81a29.78,29.78,0,0,1,0,3c-.35,3.49-2.63,5.83-5.65,5.89S141.3,76.28,141,72.6c-.07-.74,0-1.5,0-2.24q0-31.06,0-62.11a18.78,18.78,0,0,1,.18-3.36c.59-3.1,2.57-4.93,5.69-4.89a5.33,5.33,0,0,1,5.44,4.73,19.23,19.23,0,0,1,.23,3.72Q152.53,24,152.51,39.5Z"/><path class="cls-1" d="M141,308.5q0-15.35,0-30.68a17.9,17.9,0,0,1,.18-3.36c.59-3.1,2.57-4.93,5.69-4.89a5.33,5.33,0,0,1,5.44,4.73,19.23,19.23,0,0,1,.23,3.72q0,30.87,0,61.73c0,.75,0,1.5,0,2.25-.28,3.74-2.52,6.2-5.66,6.26S141,345.73,141,341.8C140.9,330.7,141,319.6,141,308.5Z"/><path class="cls-1" d="M63.7,22.57c.89.75,3,1.8,4,3.51q16.71,28.49,33.08,57.17c1.89,3.28,1.07,6.48-1.75,8.15s-6.13.81-8.16-2.68Q78.64,67.58,66.47,46.39c-2.92-5.06-6-10.06-8.73-15.21C55.52,27.07,58.08,22.62,63.7,22.57Z"/><path class="cls-1" d="M198.47,256c.88.74,2.94,1.73,3.9,3.36Q219.16,288,235.63,316.8c1.87,3.26,1,6.49-1.92,8.09s-6.07.63-7.92-2.56q-16.68-28.72-33.21-57.52C190.17,260.6,192.9,255.82,198.47,256Z"/><path class="cls-1" d="M237.25,27.31c-.94,2.21-1.38,3.63-2.1,4.89q-16.08,28-32.24,55.93c-2.32,4-5.44,5.12-8.57,3.24s-3.51-5-1.29-8.81q16.17-28.14,32.4-56.26c1.6-2.76,3.9-4.63,7-3.34C234.34,23.73,235.67,25.82,237.25,27.31Z"/><path class="cls-1" d="M64.08,325.6c-5.45,0-8.17-3.77-6.88-7.53a13.77,13.77,0,0,1,1.21-2.31q16-27.79,32.1-55.57A10.43,10.43,0,0,1,93.05,257c2.12-1.6,4.83-1.74,6.44.24,1.29,1.59,1.58,4.1,1.94,6.27.13.79-.79,1.77-1.29,2.63C89.57,284.5,79,302.83,68.35,321.08,67.15,323.12,65,324.62,64.08,325.6Z"/></g></g></svg></div>
+            <h2><i class="fa fa-web"></i>Movie Screening</h2>
+            <p class="highbox">Get a clean coded responsive Website tested for compatibility across all browsers and optimized for a high loading speed.</p>
+          </div>
+
+        <div class="box">
+          <div>
+            <img class="s-icons" src="" alt=""><svg class="s-icons v" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249.09 380.77"><defs><style>.cls-1{fill:#ff9822;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M249.06,345.6c0-6.18-2.33-8.52-8.54-8.54-10.29,0-20.57,0-30.86,0-1.31,0-2.63-.11-4.27-.19V123.54c0-1.36,0-2.73,0-4.08-.36-5.49-5.16-8.12-9.77-5.16s-8.72,6.11-13.07,9.18L171.71,131a33.93,33.93,0,0,0-1.69-5c-1.89-3.49-.9-5.52,2.34-7.81,16.57-11.74,32.94-23.77,49.37-35.72a18.77,18.77,0,0,0,3.13-2.61,6,6,0,0,0-3-10,18.61,18.61,0,0,0-4.78-.47c-20.33,0-40.65-.11-61,.07-3.42,0-4.92-.92-6-4.25Q141,36.07,131.29,7.07c-.87-2.61-3.2-4.72-4.86-7.07H122c-1.49,2.45-3.49,4.74-4.38,7.39q-9.75,29.17-19,58.5c-.88,2.76-2.06,3.6-4.89,3.58-20.45-.12-40.9-.06-61.35-.06a33,33,0,0,0-3.72.11c-3,.34-5.66,1.81-5.77,4.8-.08,2.23,1.44,4.63,2.61,6.76.54,1,1.92,1.51,2.92,2.23Q53,101.22,77.68,119.07c2.07,1.5,2.91,2.79,1.87,5.44-1.84,4.71-3.26,9.58-4.82,14.4q-7.45,22.92-14.91,45.83c-1.09,3.31-1.31,6.39,1.84,8.68s6,1,8.81-1Q96,173.83,121.58,155.3c1-.71,2-1.37,3-2.06l7.78,5.69c-1.5,1.1-2.68,2-3.87,2.83-26.38,18.69-52.7,37.45-79.19,56-4.22,3-6,6.29-6,11.39.14,34.33.08,68.66.08,103v4.94H38.8c-10.28,0-20.57-.05-30.86,0C2.31,337.11,0,339.44,0,345q0,13.75,0,27.51c0,6.25,2,8.28,8.15,8.28H240.91c5.86,0,8.12-2.22,8.15-8Q249.12,359.17,249.06,345.6ZM129.5,141.26c-4.08-2.92-6-2.92-10.06,0Q100.35,155.13,81.26,169c-1,.71-2,1.41-3.62,2.58.44-1.67.64-2.66,1-3.62q7.27-22.57,14.58-45.14c1.74-5.42,1.22-7.06-3.38-10.41Q71.17,98.87,52.53,85.35c-1.15-.84-2.26-1.74-4.3-3.3h4.61q23.23,0,46.47,0c6.28,0,7.37-.83,9.33-6.83l14.61-44.74c.34-1,.73-2,1.31-3.63l15.3,47.1c2.45,7.56,3.17,8.1,11,8.11h49.69c-1.83,1.46-2.71,2.21-3.65,2.9q-18.62,13.56-37.25,27.1c-5.32,3.87-5.73,5.09-3.73,11.22Q163,145.13,170.14,167c.4,1.24.67,2.53,1.24,4.68l-27.46-19.92C139.11,148.25,134.33,144.72,129.5,141.26ZM56.14,231.73a6.38,6.38,0,0,1,2-4.62q42-30,84.24-59.74a7.65,7.65,0,0,1,1-.49l24.74,18c3.61,2.61,7.24,5.19,10.81,7.86,2.74,2,5.55,2.84,8.51.61s2.81-5.07,1.84-8.07c-4.12-12.82-8.22-25.65-12.51-38.41-.83-2.44-.49-3.75,1.66-5.15,4.69-3.09,9.2-6.43,14.22-10V336.78H56.23c-.06-1.17-.17-2.36-.17-3.55Q56,282.48,56.14,231.73Zm180.27,136.2H12.87v-18H236.41Z"/></g></g></svg></div>
+          <h2>Awards & Prizes</h2>
+          <p class="highbox">Get visual concepts like Email marketing & Social media graphics, banners and Logos that communicate creativity.</p>
         </div>
        
     </div>
     </div>
   </section>
+
+
+
+
+  		<section>
+            <div class="speaker-wrapper">
+                <div>
+                    
+                    <div class="speaker-item">
+                        <div class="speaker-image">
+                            <div class="speaker-image-inner">
+                                <img src="images/fashion/speaker1.jpg" alt="speaker image"
+                                    class="img-responsive">
+                            </div><!-- speaker-image-inner -->
+                        </div><!-- speaker-image -->
+
+                        <div class="speaker-content">
+                            
+                            <h4><a href="speaker-details.html">Nguien
+                                    Walker</a><span>Speaker</span></h4>
+
+                            <p>Samet consectetuer apiscing elitsed diam nonumy nibh
+                                euismod ncidun awesome team mumber</p>
+                            <ul class="speaker-social">
+                                <li><a href="#"><i class="fa fa-facebook"
+                                            aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"
+                                            aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"
+                                            aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"
+                                            aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest-p"
+                                            aria-hidden="true"></i></a></li>
+                            </ul>
+                            
+                        </div><!-- speaker-content -->
+                    </div><!-- speaker-item -->
+                   
+                </div>
+            </div>
+        </section>
+
+
+        
+        <!-- About start here -->
+        <section class="about ">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>About Uniport Short Film Festival (USFF)</h2>
+                    <!-- <p><em>Creative Thinking for Event Conference</em></p> -->
+                </div>
+                <p>Phosrescently ntiate principle centered networks via magnetic services a Entusiasticaly streamline
+                    fulys tested metrics without freproof we services enabled Rapidiously evisculate standards compliant
+                    fullys tested metrics without futureproof web services anfullys tested metrics without futureproof
+                    web services experiences bricks clicks a are aparadigmsRapidiously evisculate standards compliant
+                    web services are afor error free Assertively engineer areRapidiously Rapidiously evisculate
+                    standards compliant web services are afor error free</p>
+                
+                    <div class="button-div"><a class="sub-button" href="registeration.html"><p>Register</p></a><a class="sub-button" href=""><p>Submit Film</p></a></div>
+                </div>
+                
+
+            </div>
+            <!-- container -->
+        </section>
+        <!-- About end here -->
 
            <!-- Schedules start here -->
            <section class="schedules padding-120">
@@ -582,9 +676,133 @@
             </div>
             <!-- container -->
         </section>
-      
         <!-- Schedules end here -->
 
+        <section class="pricing style-11 padding-120">
+            <div class="container">
+                <div class="row">
+                    <div class="section-header">
+                        <h2>event tickets Plan</h2>
+                        <p>Kaynote Is Working Worldwide From 30+ Years Ago For Business Developmentny And
+                            Enterpreniorship They Have Something Awesome Services And Products Fors Events
+                            Development Wordpress Theme.</p>
+                    </div>
+                    <div class="section-wrapper">
+                        <div class="row">
+                           
+                            <div class="col-lg-4 col-md-6 col-xs-12">
+                                <div class="pricing-item">
+                                    <div class="pricing-thumb">
+                                        <img src="images/11-04-19/pricing/pricing.png" alt="pricing">
+                                    </div>
+                                    <div class="pricing-title">
+                                        <h5>Basic</h5>
+                                        <p>Holisticl initiate functionzed information without viraling imperatives.
+                                        </p>
+                                    </div>
+                                    <div class="pricing-content">
+                                        <ul>
+                                            <li>Conference Tickets</li>
+                                            <li>Free Lunch And Coffee</li>
+                                            <li>Free Event T-shirt</li>
+                                            <li>Add Speakers Twogather</li>
+                                            <li class="close-offer">Add Speakers Dinner</li>
+                                            <li class="close-offer">Enjoy Night Music</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-button">
+                                        <div class="price">
+                                            <span>Free!</span>
+                                            <a href="#">register</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-xs-12">
+                                <div class="pricing-item">
+                                    <div class="pricing-thumb">
+                                        <img src="images/11-04-19/pricing/pricing3.png" alt="pricing">
+                                    </div>
+                                    <div class="pricing-title">
+                                        <h5>Master-class</h5>
+                                        <p>Holisticl initiate functionzed information without viraling imperatives.
+                                        </p>
+                                    </div>
+                                    <div class="pricing-content">
+                                        <ul>
+                                            <li>Conference Tickets</li>
+                                            <li>Free Lunch And Coffee</li>
+                                            <li>Free Event T-shirt</li>
+                                            <li>Add Speakers Twogather</li>
+                                            <li>Add Speakers Dinner</li>
+                                            <li>Enjoy Night Music</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-button">
+                                        <div class="price">
+                                            <span>N5000</span>
+                                            <a href="#">get tickets</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- footer -->
+  <div class="footer">
+    <div class="footer-content">
+    <div class="footer-section about">
+    <h1 class="logo-text"><span>Niyel</span>Blog</h1>
+    <P>
+      Niyel Blog is a Digital Marketing, Tech & Life Style blog. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vero eius repellendus aperiam impedit odio, sit repudiandae a autem dignissimos!
+    </P>
+    <div class="contact">
+      <span><i class="fa fa-phone"></i> &nbsp; +234-567-89123</span>
+      <span><i class="fa fa-envelope"></i> &nbsp; info@niyelblog</span>
+    </div>
+    <div class="socials">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+    </div>
+    </div>
+    <div class="footer-section links">
+      <h2>Quick Links</h2>
+      </br>
+      <ul>
+        <a href="#"><li>Events</li></a>
+        <a href="#"><li>Team</li></a>
+        <a href="#"><li>Mentores</li></a>
+        <a href="#"><li>Gallery</li></a>
+        <a href="#"><li>Terms and Conditions</li></a>
+      </ul>
+    </div>
+
+    <div class="footer-section contact-form">
+       <h2>Contact Us</h2>
+    </br>
+    <form action="index.html" method="post">
+      <input type="email" class="text-input contact-input" placeholder="Your email address...">
+      <textarea rows="4" name="message" class="text-input contact-input" placeholder=""></textarea>
+      <button type="submit" class="btn btn-big contact-btn">
+        <i class="fa fa-envelope"></i>
+        Send
+      </button>
+    </form>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; Niyelblog | Designed by Daniel Agu
+  </div>
+  </div>
+  <!-- //footer -->
 
   </div>
   
@@ -646,6 +864,16 @@
 
     <!-- Custom -->
     <script src="assets/js/custom.js"></script>
+
+    <script> $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });</script>
+    <script  src="mynav.js"></script>
 
     <!-- Animation On Scroll(AOS) -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
