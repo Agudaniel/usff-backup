@@ -181,19 +181,25 @@ a {
 }
 .hero .hero-content .content {
   width: 0px;
-   margin-top: 180px;
+   margin-top: 150px;
    margin-left: 18px;
 }
 
 .hero .hero-content .content .firstp{
   color: #ffffff;
-  font-size: 2em;
-  margin-left: 136px;
+  font-size: 2.4em;
+  margin-left: 130px;
+  font-weight: 700;
   }
   .hero .hero-content .content .counter {
-    font-size: 5em;
+    font-size: 6em;
     /* text-align: center; */
-    margin-left: 160px;
+    margin-left: 150px;
+    background: #00000063;
+    border-radius: 50%;
+    padding: 10px;
+    padding-right: 30px;
+    backdrop-filter: blur(1px);
   }
   .hero-content .content span {
     color: #ff9822;
@@ -211,12 +217,14 @@ a {
   .hero .hero-content .content .countdown li span{ color: #ff9822;
   font-size: 2em;
   
+  
   }
 
 
   .hero .hero-content .content .countdown p{
   color: #ffffff;
   font-size: 0.6em;
+  
   }
 
   .hero .hero-content .main-content {
@@ -250,7 +258,9 @@ a {
   color: #ffffff;
   font-size: 1.5em;
   padding-top: 20px;
-  font-family: serif;
+  font-family: sans-serif;
+  font-style: italic;
+  letter-spacing: 2px;
 }
 
 .hero .hero-content .main-content .button-div {
@@ -394,19 +404,22 @@ a {
 /* ABOUT */
 
 .about {
-  background-color: #020d2e8a;
-  background-image: url(images/backgrounds/bg-footer-07.jpg);
+  background-color: #000000d8;
+  background-image: url(award-bg1.jpg);
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;
+
   /* text-align: center; */
   display: flex;
   justify-content: center;
 }
 .about .container {
- width: 100%;
+ width: 100%;  backdrop-filter: blur(2px);
  margin: 0;
  padding: 0;
+ padding-top: 40px ;
+ padding-bottom: 30;
 }
 .about .container .section-header {
 
@@ -450,9 +463,23 @@ a {
   padding: 0px 60px;
   text-align: center;
 }
+
+.about .container .event-details .award-box .award-content h2 {
+font-size: 3em;
+}
 .about .container .event-details .award-box .award-content {
   display: flex;
   justify-content: space-around;
+  
+}
+.about .container .event-details .award-box .award-content .content:first-child {
+  margin-top: 40px;
+}
+.about .container .event-details .award-box .award-content .content:last-child {
+  margin-top: 40px;
+}
+.about .container .event-details .award-box .award-content img {
+ margin-bottom: 6px;
   
 }
 
@@ -677,7 +704,11 @@ a {
 .pricing.style-11 {
   background: #00040f;
   color: #ffffff;
-  padding: 20px;
+  padding: 20px;  flex-wrap: wrap;
+  /* background-image: url(womANACT@2x.png);
+  background-size: auto;
+  background-position: right bottom;
+  background-repeat: no-repeat; */
 }
 
 .pricing.style-11 .container .row .section-header h2 {
@@ -691,11 +722,19 @@ a {
   text-align: center;
 }
 
+.pricing.style-11 .container {
+
+}
+
 .pricing.style-11 .container .row .section-wrapper .row {
   /* display: grid; */
-  flex-wrap: wrap;
+  background-image: url(womANACT@2x.png);
+  background-size: auto;
+  background-position: right bottom;
+  background-repeat: no-repeat;
   /* grid-template-columns: 1fr 1fr; */
   /* flex-direction: column; */
+  
 }
 
 .pricing.style-11 .pricing-item {
@@ -851,10 +890,7 @@ footer .container .row .footer-img img  {
   background-color: #ffffff;
   border-radius: 50%;
 }
-footer .container .row .footer-img img:first-child {
-  padding: 5px 12px;
-  /* height: 40px; */
-}
+
 footer .container .row h5{
   letter-spacing: 2px; 
   color: #ffffff;
@@ -870,6 +906,19 @@ footer .container .row a:hover{
 }
 footer .container .row .text-center{
   background-color: rgb(51, 164, 244);
+}
+
+
+
+::-webkit-scrollbar {
+  width: 8px; 
+}
+::-webkit-scrollbar-thumb {
+  background: #bef0f8; 
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #010d17;
 }
 
 
@@ -904,6 +953,7 @@ footer .container .row .text-center{
     .hero .hero-content .content .counter {
       font-size: 3em;
       margin: 0 auto;
+      padding-right: 18px;
     }
     .hero-content .content span {
       color: #ff9822;
@@ -956,7 +1006,7 @@ footer .container .row .text-center{
     color: #ffffff;
     font-size: 1.5em;
     padding-top: 20px;
-    font-family: serif;
+    /* font-family: serif; */
   }
   
   .hero .hero-content .main-content .button-div {
@@ -1039,8 +1089,26 @@ footer .container .row .text-center{
   .s-section .services .s-boxes .box p {
     max-width: 100%;
   }
+
+  /* For registration page */
+.hero.reg {
+ height: 400px;
+}
+.hero .hero-content.reg{
+  height: 380px;
+}
+.hero .hero-content.reg .content.reg{
+  display: none;
+  height: 0px;
+ /* flex-direction: row-reverse; */
+}
+.hero .hero-content.reg .main-content.reg {
+
+}
   
 }
+
+
 
 
 @media only screen and (max-width: 780px) {
@@ -1135,7 +1203,7 @@ footer .container .row .text-center{
 
 .about {
   background-color: #020d2e8a;
-  background-image: url(images/backgrounds/bg-footer-07.jpg);
+  background-image: url(award-bg1.jpg);
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1148,16 +1216,12 @@ footer .container .row .text-center{
  margin: 0;
  padding: 0;
 }
-.about .container .section-header {
 
-}
 .about .container .section-header h2 {
   color: #ffffff;
   padding-top: 40px;
 }
-.about .container .section-header p {
 
-}
 .about .container p {
   color: #ffffff;
   margin-bottom: 16px ;
@@ -1191,11 +1255,6 @@ footer .container .row .text-center{
 .about .container .event-details .award-box p {
   padding: 0px 60px;
   text-align: center;
-}
-.about .container .event-details .award-box .award-content {
-  display: flex;
-  justify-content: space-around;
-  
 }
 
 .about .container .button-div  {
@@ -1235,9 +1294,9 @@ footer .container .row .text-center{
 
   }
   .about {
-    background-color: #00040f;
-    background-image: none;
-    backdrop-filter: #00040f;
+    background-color: #201b1be7;
+    background-image: url(award-bg2.jpg);
+    padding: 0px 14px;
   }
   .about .container .section-header h2 {
     color: #ffffff;
@@ -1251,7 +1310,28 @@ footer .container .row .text-center{
   .about .container p {
     font-size: 1em;
   }
- 
+
+    /* For registration page */
+.hero.reg {
+  height: 340px;
+ }
+ .hero .hero-content.reg{
+   height: 310px;
+ }
+
+ /* .about .container .event-details .award-box .award-content h2 {
+  font-size: 1em;
+  }
+  .about .container .event-details .award-box .award-content {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .about .container .event-details .award-box .award-content img {
+   
+    
+  } */
+
 
 }
 @media only screen and (max-width: 480px) {
@@ -1259,7 +1339,7 @@ footer .container .row .text-center{
     font-size: 3em;
     padding: 0px 10px;
   }
-  .hero .hero-content .main-content h4 {
+  .hero .hero-content .main-content h2 {
     font-size: 1em;
   }
 
@@ -1286,10 +1366,30 @@ footer .container .row .text-center{
   .about .container .button-div .sub-button p{
     width: 170px;
   }
+  .about .container .event-details .award-box .award-content h2 {
+    
+    font-size: 1.4em;
+  }
+  .about .container .event-details .award-box .award-content h2 {
+    font-size: 1.4em;
+    }
+    .about .container .event-details .award-box .award-content {
+      display: flex;
+      justify-content: space-around;
+      
+    }
+    .about .container .event-details .award-box .award-content img {
+     
+      width: 60%;
+      margin: 0% 20% 0% 20%;
+    }
   
 }
 @media only screen and (max-width: 375px) {
-
+  .hero .hero-content .main-content h1 {
+    font-size: 2.5em;
+    padding: 0px 10px;
+  }
 }
 @media only screen and (max-width: 320px) {
 
