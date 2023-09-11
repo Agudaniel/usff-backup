@@ -278,13 +278,13 @@ a {
   font-size: 1.4em;
   justify-content: center;
   text-align: center;
-  width: 200px;
   color: #ffffff;
   margin-top: 50px;
+  width: 200px;
   border: 2px solid  #5ce1e6;
-  border-radius: 30px;
   padding: 10px 20px;
-  /* margin-left: 180px; */
+  border-radius: 30px;
+
 }
 
 .hero .hero-content .main-content .sub-button {
@@ -346,7 +346,7 @@ a {
   padding: 0px 60px;
   /* background: #cccccc; */
   border-radius: 10px;
-  border: 2px solid #5ce1e6;
+  border: 2px solid #12b2b7;
   padding-top: 30px;
 }
 .s-section .services h1 {
@@ -419,7 +419,7 @@ a {
  margin: 0;
  padding: 0;
  padding-top: 40px ;
- padding-bottom: 30;
+ padding-bottom: 0;
 }
 .about .container .section-header {
 
@@ -453,6 +453,7 @@ a {
 .about .container .event-details .film-cat ul li {
   list-style-type: circle;
   margin-left: 16px;
+  font-size: 1.4em;
 }
 .about .container .event-details .award-box {
   width: 70%;
@@ -464,23 +465,29 @@ a {
   text-align: center;
 }
 
-.about .container .event-details .award-box .award-content h2 {
-font-size: 3em;
-}
 .about .container .event-details .award-box .award-content {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   
 }
 .about .container .event-details .award-box .award-content .content:first-child {
   margin-top: 40px;
 }
-.about .container .event-details .award-box .award-content .content:last-child {
-  margin-top: 40px;
+.about .container .event-details .award-box .award-content h2 {
+font-size: 3em;
 }
 .about .container .event-details .award-box .award-content img {
- margin-bottom: 6px;
+  margin-bottom: 6px;
+ 
   
+}
+.about .container .event-details .award-box .award-content .content:last-child {
+  margin-top: 40px;
+  margin-left: 26px;
+}
+.about .container .event-details .award-box .award-content .center {
+   margin-left: 16px;
 }
 
 .about .container .button-div  {
@@ -489,6 +496,7 @@ font-size: 3em;
 }
 .about .container .button-div .sub-button{
   margin: 0px 10px;
+  margin-bottom: 40px;
 }
 .about .container .button-div .sub-button p {
   font-size: 1.4em;
@@ -496,7 +504,7 @@ font-size: 3em;
   text-align: center;
   width: 200px;
   color: #ffffff;
-  margin-top: 50px;
+  margin-top: 20px;
   border: 2px solid  #5ce1e6;
   border-radius: 30px;
   padding: 10px 20px;
@@ -513,7 +521,7 @@ font-size: 3em;
 
 /* SPEAKERS */
 .speaker-wrapper {
-  background-color: #00040f;
+  background-color: #050812;
   padding: 40px;
 }
 /* SPEAKERS END */
@@ -523,12 +531,13 @@ font-size: 3em;
 .schedules .container .section-header h3{
   color: #ffffff;
   font-size: 1.8em;
+  padding-top: 40px;
 }
 .schedules .container .section-header p{
   color: #ffffff;
 }
 .schedules {
-  background-color: #00040f;
+  background-color: #050812;
 }
 
 .schedules .section-header {
@@ -625,17 +634,20 @@ font-size: 3em;
 
 .schedules .tab-content table {
     /* border: 10px solid #fafafa; */
-    border-top: none;
-    min-width: 1110px;
+    /* border-top: none; */
+    border-width: 0px;
+    min-width: 100px;
     overflow-X: auto;
+    
 }
 
+
 .schedules .tab-content table .time {
-    width: 16%;
+    width: 8%;
 }
 
 .schedules .tab-content table .session {
-    width: 10%;
+    width: 8%;
 }
 
 .schedules .tab-content table .speaker {
@@ -643,7 +655,7 @@ font-size: 3em;
 }
 
 .schedules .tab-content table .venue {
-    width: 20%;
+    /* width: 20%; */
 }
 
 .schedules .tab-content table th {
@@ -697,12 +709,16 @@ font-size: 3em;
 .schedules .tab-content .schedule-button:hover {
     /* background-color: #ff9822; */
 }
+.schedule-table.table-responsive {
+  /* display: none; */
+  margin-bottom: 0px;
+}
 
 
 
 /* pricing section start here style-11 11-04-19*/
 .pricing.style-11 {
-  background: #00040f;
+  background: #050812;
   color: #ffffff;
   padding: 20px;  flex-wrap: wrap;
   /* background-image: url(womANACT@2x.png);
@@ -710,7 +726,9 @@ font-size: 3em;
   background-position: right bottom;
   background-repeat: no-repeat; */
 }
-
+.pricing.style-11 .container .row .section-header {
+  margin-bottom: 0px;
+}
 .pricing.style-11 .container .row .section-header h2 {
   color: #ffffff;
   text-align: center;
@@ -882,7 +900,7 @@ footer section h1 {
 }
 
 footer .container {
-  
+  margin: 0px;
 }
 footer .container .row {
 
@@ -910,9 +928,21 @@ footer .container .row p{
 }
 footer .container .row a{
   color: #ffffff;
+  transition: .3s;
 }
-footer .container .row a:hover{
-
+footer .container .row a{
+  color: #ffffff;
+  transition: .3s;
+}
+footer .container .row li a:hover{
+ padding-left: 10px;
+ color: #ff9822;
+ transition: .3s;
+}
+footer .container .row li a p:hover{
+ padding-left: 10px;
+ color: #ff9822;
+ transition: .3s;
 }
 footer .container .row .text-center{
   background-color: rgb(51, 164, 244);
@@ -1256,6 +1286,7 @@ footer .container .row .text-center{
   list-style-type: circle;
   margin-left: 16px;
   text-align: center;
+  font-size: 1.2em;
 }
 .about .container .event-details .award-box {
   width: 100%;
@@ -1389,9 +1420,19 @@ footer .container .row .text-center{
       
     }
     .about .container .event-details .award-box .award-content img {
-     
       width: 60%;
-      margin: 0% 20% 0% 20%;
+      margin: 0% 20% 6% 20%;
+    }
+    .about .container .event-details .award-box .award-content .content:last-child {
+      margin-left: 0px;
+    }
+    .about .container .event-details .award-box .award-content .center {
+       margin-left: 24px;
+       
+    }
+    .about .container .event-details .award-box .award-content .content.center {
+       margin: 0px;
+
     }
   
 }
