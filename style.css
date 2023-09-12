@@ -213,6 +213,7 @@ a {
     padding: 0px 20px;
     font-size: 2em;
     z-index: 2;
+    color: transparent;
   }
   .hero .hero-content .content .countdown li span{ color: #ff9822;
   font-size: 2em;
@@ -266,6 +267,7 @@ a {
 .hero .hero-content .main-content .button-div {
   display: flex;
   justify-content: center;
+  
   
   /* text-align: center; */
 }
@@ -879,6 +881,89 @@ font-size: 3em;
   
 }
 
+.host {
+  width: 100%;
+  height: 800px;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  background-color: #050812;
+  z-index: 3;
+  position: relative;
+  font-family: "Nunito", sans-serif;
+}
+
+.host .outer-border {
+  width: 40%;
+  /* border: 4px solid #00fcfa; */
+  border: 4px solid #ff9822;
+  transform: rotate(7deg);
+  transition: 0.4s;
+  border-radius: 5px;
+  background-image: url("dr-sam.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  z-index: 1;
+  margin-right: 10px;
+  box-shadow: -1px 16px 20px 0px rgb(0, 0, 0);
+}
+
+.host .outer-border:hover {
+  transform: rotate(0deg);
+  background-image: url("dr-sam.jpg");
+  transition: 0.7s;
+  /* background-color: #e7e7e7; */
+  /* border-radius: 50px 0px 50px 50px; */
+}
+
+.host img {
+  max-width: 85%;
+  height: auto;
+  border: 4px solid #ff9822;
+  border-radius: 5px;
+  margin-left: 70px;
+  /* transform: ; */
+  transform: rotate(-10deg)scaleX(-1);
+  transition: 0.4s;
+  box-shadow: -1px 16px 20px 0px rgb(0, 0, 0);
+}
+
+.host img:hover {
+  display: none;
+  transform: rotate(0deg)scaleX(-1);
+  transition: 0.7s;
+  box-shadow: 0px 0px 0px 0px;
+}
+
+.host .content {
+  width: 60%;
+  height: auto;
+  padding: 6px 20px 6px 40px;
+  margin-left: px;
+  background-color: #050812;
+  border-radius: 0px 50px 50px 50px;
+  font-size: 1.3em;
+  line-height: 27px;
+  text-align: justify;
+}
+
+.host .content h2 {
+  color: #ff9822;
+  font-family: "Times New Roman";
+  text-align: center;
+  font-size: 5em;
+}
+.host .content p {
+  color: #dce1e4;
+  font-size: 1em;
+}
+
+.host .content h1 {
+  padding-bottom: 10px;
+}
+
 .reg-container {
   background: rgb(0, 4, 15);
 }
@@ -1130,6 +1215,42 @@ footer .container .row .text-center{
     max-width: 100%;
   }
 
+
+  .host {
+    height: auto;
+    padding: 80px 30px;
+  }
+  .host .outer-border {
+    border: 0px solid #e7e7e7;
+    transform: rotate(0deg)scaleX(-1);
+    border-radius: 30px 0px 0px 30px;
+    background-color: #e7e7e7;
+    /* background-image: url("https://i.ibb.co/MVfGZYV/daniel-agu-about.jpg"); */
+  }
+  .host .outer-border:hover {
+    transform: rotate(0deg);
+    background-color: #e7e7e7;
+    border-radius: 30px 0px 0px 30px;
+  }
+  .host img {
+    display: none;
+    max-width: 100%;
+    margin-left: 0px;
+    transform: rotate(0deg);
+    box-shadow: 0px 0px;
+    padding-top: 70px;
+  }
+  .host img:hover {
+    transform: rotate(0deg);
+    box-shadow: 0px 0px 0px 0px;
+  }
+  .host .content {
+    width: 90%;
+    border-radius: 30px 0px 0px 30px;
+  }
+
+
+
   /* For registration page */
 .hero.reg {
  height: 400px;
@@ -1142,6 +1263,7 @@ footer .container .row .text-center{
   height: 0px;
  /* flex-direction: row-reverse; */
 }
+
 .hero .hero-content.reg .main-content.reg {
 
 }
@@ -1324,6 +1446,25 @@ footer .container .row .text-center{
 
 /* ABOUT ENDS*/
 
+ 
+.host {
+  height: auto;
+  padding: 40px 10px;
+  /* flex-direction: column; */
+}
+.host .outer-border {
+  /* display: none; */
+  margin-left: 6px;
+  
+}
+
+.host .content {
+  /* width: 100%; */
+  border-radius: 10px;
+  font-size: 1.1em;
+  width: 400px;
+}
+
 
 
 }
@@ -1359,6 +1500,45 @@ footer .container .row .text-center{
  .hero .hero-content.reg{
    height: 310px;
  }
+
+
+ 
+ .host {
+  height: auto;
+  padding: 40px 20px;
+  flex-direction: column;
+}
+.host .outer-border {
+  width: 100%;
+  display: block;
+  background-image: url("");
+  border: 0px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  padding-top: 70px;
+
+  
+}
+.host .outer-border:hover{
+  background-image: url("");
+  background-color: transparent;
+} 
+.host .outer-border img {
+  display: block;
+  padding: 18px;
+  /* margin-right: 50%; */
+  /* padding-right: 50%; */
+  width: 100%;
+
+}
+
+.host .content {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.1em;
+}
 
  /* .about .container .event-details .award-box .award-content h2 {
   font-size: 1em;
@@ -1432,8 +1612,24 @@ footer .container .row .text-center{
     }
     .about .container .event-details .award-box .award-content .content.center {
        margin: 0px;
+    }
+
+
+    
+    .host {
+      padding: 0px;
+    }
+    .host .content {
+      width: 100%;
+      /* border-radius: 10px; */
+      font-size: 1.2em;
+      padding: 0px 22px;
 
     }
+    .host .content p{
+      margin-bottom: 0px;
+    }
+    
   
 }
 @media only screen and (max-width: 375px) {
