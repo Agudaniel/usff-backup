@@ -418,6 +418,7 @@ a {
   padding: 40px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .speaker-wrapper .speaker-item {
@@ -433,14 +434,8 @@ a {
 .speaker-wrapper .speaker-item .speakers-image img {
   width: 100%;
   height: auto;
-  filter: grayscale(100%);
 }
-.speaker-wrapper .speaker-item .speakers-image img:hover {
-  width: 100%;
-  height: auto;
-  filter: grayscale(0%);
-  transition: .1s;
-}
+
 .speaker-wrapper .speaker-item .speaker-content {
   /* padding-left: 30px; */
   padding-top: 20px;
@@ -1220,7 +1215,7 @@ footer .container .row .text-center{
   .hero-content .main-content a {
     padding: 0px 10px;
   }
-  
+  .mega
   .hero .hero-content .main-content a p {
     font-size: 1.4em;
     justify-content: center;
