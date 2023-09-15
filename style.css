@@ -386,6 +386,7 @@ a {
   color: white;
   letter-spacing: 0.7px;
 }
+
 .s-section .services .s-boxes .s-icons {
   width: 18%;
  justify-content: center;
@@ -409,6 +410,7 @@ a {
 #speakers{
   text-align: center;
     background-color: #050812;
+    background-image: url("");
 }
 #speakers h1{
   padding: 70px 0px 10px;
@@ -434,6 +436,7 @@ a {
 .speaker-wrapper .speaker-item .speakers-image img {
   width: 100%;
   height: auto;
+  box-shadow: -4px 4px 0px 0px #c76a00;
 }
 
 .speaker-wrapper .speaker-item .speaker-content {
@@ -532,7 +535,7 @@ width: 50px;
 .about .container .event-details .film-cat ul li {
   list-style-type: circle;
   margin-left: 16px;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 .about .container .event-details .award-box {
   width: 70%;
@@ -954,8 +957,8 @@ font-size: 3em;
 
 .host {
   width: 100%;
-  height: 800px;
-  padding: 100px;
+  height: auto;
+  padding: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -978,13 +981,13 @@ font-size: 3em;
   background-size: cover;
   z-index: 1;
   margin-right: 10px;
-  box-shadow: -1px 16px 20px 0px rgb(0, 0, 0);
+  box-shadow: -16px 16px 20px 0px rgb(0, 0, 0);
 }
 
 .host .outer-border:hover {
-  transform: rotate(0deg);
+  /* transform: rotate(0deg);
   background-image: url("dr-sam.jpg");
-  transition: 0.7s;
+  transition: 0.7s; */
   /* background-color: #e7e7e7; */
   /* border-radius: 50px 0px 50px 50px; */
 }
@@ -998,15 +1001,15 @@ font-size: 3em;
   /* transform: ; */
   transform: rotate(-10deg)scaleX(-1);
   transition: 0.4s;
-  box-shadow: -1px 16px 20px 0px rgb(0, 0, 0);
+  box-shadow: 10px 10px 20px 0px rgb(0, 0, 0);
 }
 
-.host img:hover {
+/* .host img:hover {
   display: none;
   transform: rotate(0deg)scaleX(-1);
   transition: 0.7s;
   box-shadow: 0px 0px 0px 0px;
-}
+} */
 
 .host .content {
   width: 60%;
@@ -1043,6 +1046,7 @@ footer {
   background-color:  rgb(0, 4, 15);;
   text-align: left;
   color: #ffffff;
+
 }
 footer section {
   background-color:   rgb(10, 16, 35);
@@ -1052,11 +1056,13 @@ footer section {
 }
 footer section h1 {
   padding-top: 18px;
+
   
 }
 
 footer .container {
   margin: 0px;
+  font-size: 1em;
 }
 footer .container .row {
 
@@ -1080,7 +1086,7 @@ footer .container .row h5{
   color: #ffffff;
 }
 footer .container .row p{
-
+  font-size: 1em;
 }
 footer .container .row a{
   color: #ffffff;
